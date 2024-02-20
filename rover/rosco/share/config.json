@@ -1,661 +1,473 @@
 {
-    "connections": {
-        "external": {
-            "incoming": [
-                {
-                    "name": "Automatic_On",
-                    "sink": "Task_Manual_Driving.Automatic_On"
-                },
-                {
-                    "name": "LeftStick_X",
-                    "sink": "Task_Sensor_Data_Fusion.LeftStick_X"
-                },
-                {
-                    "name": "ButtonL2",
-                    "sink": "Task_Sensor_Data_Fusion.ButtonL2"
-                },
-                {
-                    "name": "ButtonL1",
-                    "sink": "Task_Sensor_Data_Fusion.ButtonL1"
-                },
-                {
-                    "name": "ButtonR2",
-                    "sink": "Task_Sensor_Data_Fusion.ButtonR2"
-                },
-                {
-                    "name": "ButtonR1",
-                    "sink": "Task_Sensor_Data_Fusion.ButtonR1"
-                },
-                {
-                    "name": "ButtonX",
-                    "sink": "Task_Sensor_Data_Fusion.ButtonX"
-                },
-                {
-                    "name": "ButtonA",
-                    "sink": "Task_Sensor_Data_Fusion.ButtonA"
-                },
-                {
-                    "name": "ButtonB",
-                    "sink": "Task_Sensor_Data_Fusion.ButtonB"
-                },
-                {
-                    "name": "ButtonY",
-                    "sink": "Task_Sensor_Data_Fusion.ButtonY"
-                },
-                {
-                    "name": "VelocityIn",
-                    "sink": "Task_Sensor_Data_Fusion.VelocityIn"
-                },
-                {
-                    "name": "DistanceToFrontUS_left",
-                    "sink": "Task_Sensor_Data_Fusion.DistanceToFrontUS_left"
-                },
-                {
-                    "name": "DistanceToFrontLaser",
-                    "sink": "Task_Sensor_Data_Fusion.DistanceToFrontLaser"
-                },
-                {
-                    "name": "RightStick_X",
-                    "sink": "Task_Sensor_Data_Fusion.RightStick_X"
-                },
-                {
-                    "name": "RightStick_Y",
-                    "sink": "Task_Sensor_Data_Fusion.RightStick_Y"
-                },
-                {
-                    "name": "DistanceToFrontObstacle",
-                    "sink": "Task_Sensor_Data_Fusion.DistanceToFrontObstacle"
-                },
-                {
-                    "name": "FrontObstacleCommand",
-                    "sink": "Task_Sensor_Data_Fusion.FrontObstacleCommand"
-                },
-                {
-                    "name": "LeftStick_Y",
-                    "sink": "Task_Sensor_Data_Fusion.LeftStick_Y"
-                },
-                {
-                    "name": "ButtonSelect",
-                    "sink": "Task_Sensor_Data_Fusion.ButtonSelect"
-                },
-                {
-                    "name": "ButtonHome",
-                    "sink": "Task_Sensor_Data_Fusion.ButtonHome"
-                },
-                {
-                    "name": "LD_Distance_Left",
-                    "sink": "Task_Sensor_Data_Fusion.LD_Distance_Left"
-                },
-                {
-                    "name": "LD_Distance_Right",
-                    "sink": "Task_Sensor_Data_Fusion.LD_Distance_Right"
-                },
-                {
-                    "name": "LD_present_left",
-                    "sink": "Task_Sensor_Data_Fusion.LD_present_left"
-                },
-                {
-                    "name": "LD_present_right",
-                    "sink": "Task_Sensor_Data_Fusion.LD_present_right"
-                },
-                {
-                    "name": "LD_Orientation",
-                    "sink": "Task_Sensor_Data_Fusion.LD_Orientation"
-                },
-                {
-                    "name": "DistanceToFrontUS_right",
-                    "sink": "Task_Sensor_Data_Fusion.DistanceToFrontUS_right"
-                },
-                {
-                    "name": "DPadLeft",
-                    "sink": "Task_Sensor_Data_Fusion.DPadLeft"
-                },
-                {
-                    "name": "DPadRight",
-                    "sink": "Task_Sensor_Data_Fusion.DPadRight"
-                },
-                {
-                    "name": "DPadUp",
-                    "sink": "Task_Sensor_Data_Fusion.DPadUp"
-                },
-                {
-                    "name": "DPadDown",
-                    "sink": "Task_Sensor_Data_Fusion.DPadDown"
-                },
-                {
-                    "name": "LD_rover_detected",
-                    "sink": "Task_Sensor_Data_Fusion.LD_rover_detected"
-                },
-                {
-                    "name": "LD_rover_distance",
-                    "sink": "Task_Sensor_Data_Fusion.LD_rover_distance"
-                },
-                {
-                    "name": "LD_rover_id",
-                    "sink": "Task_Sensor_Data_Fusion.LD_rover_id"
-                },
-                {
-                    "name": "LD_curve_detected",
-                    "sink": "Task_Sensor_Data_Fusion.LD_curve_detected"
-                },
-                {
-                    "name": "LD_curve_radius",
-                    "sink": "Task_Sensor_Data_Fusion.LD_curve_radius"
-                },
-                {
-                    "name": "LD_server_connected",
-                    "sink": "Task_Sensor_Data_Fusion.LD_server_connected"
-                },
-                {
-                    "name": "ButtonStart",
-                    "sink": "Task_Sensor_Data_Fusion.ButtonStart"
-                }
-            ],
-            "outgoing": [
-                {
-                    "name": "Gear",
-                    "source": "Task_Manual_Driving.Gear"
-                },
-                {
-                    "name": "EB_On",
-                    "source": "Task_Coordinator.EB_On"
-                },
-                {
-                    "name": "SteeringAngle",
-                    "source": "Task_Coordinator.SteeringAngle"
-                },
-                {
-                    "name": "LK_On",
-                    "source": "Task_Coordinator.LK_On"
-                },
-                {
-                    "name": "ACC_On",
-                    "source": "Task_Coordinator.ACC_On"
-                },
-                {
-                    "name": "MotorValue",
-                    "source": "Task_Low_Level_Driving.MotorValue"
-                },
-                {
-                    "name": "SteeringValue",
-                    "source": "Task_Low_Level_Driving.SteeringValue"
-                },
-                {
-                    "name": "LD_Distance_Right_filtered",
-                    "source": "Task_Sensor_Data_Fusion.LD_Distance_Right_filtered"
-                },
-                {
-                    "name": "LD_Distance_Left_filtered",
-                    "source": "Task_Sensor_Data_Fusion.LD_Distance_Left_filtered"
-                },
-                {
-                    "name": "RumbleLK",
-                    "source": "Task_Driver_Assistance.RumbleLK"
-                },
-                {
-                    "name": "ACC_TargetDistance",
-                    "source": "Task_Driver_Assistance.ACC_TargetDistance"
-                },
-                {
-                    "name": "ACC_MaxVelocity",
-                    "source": "Task_Driver_Assistance.ACC_MaxVelocity"
-                },
-                {
-                    "name": "ACC_TimeGap",
-                    "source": "Task_Driver_Assistance.ACC_TimeGap"
-                },
-                {
-                    "name": "LK_DisplayMessage",
-                    "source": "Task_Driver_Assistance.LK_DisplayMessage"
-                },
-                {
-                    "name": "ACC_DisplayMessage",
-                    "source": "Task_Driver_Assistance.ACC_DisplayMessage"
-                },
-                {
-                    "name": "EB_triggered",
-                    "source": "Task_Driver_Assistance.EB_triggered"
-                }
-            ]
-        },
-        "internal": [
-            {
-                "source": "Task_Manual_Driving.MaxAccelerationMD",
-                "sink": [
-                    "Task_Coordinator.MaxAccelerationMD"
-                ]
-            },
-            {
-                "source": "Task_Manual_Driving.TargetVelocityMD",
-                "sink": [
-                    "Task_Coordinator.TargetVelocityMD"
-                ]
-            },
-            {
-                "source": "Task_Manual_Driving.SteeringAngleMD",
-                "sink": [
-                    "Task_Coordinator.SteeringAngleMD"
-                ]
-            },
-            {
-                "source": "Task_Coordinator.MaxAcceleration",
-                "sink": [
-                    "Task_Low_Level_Driving.MaxAcceleration"
-                ]
-            },
-            {
-                "source": "Task_Coordinator.TargetSteeringAngle",
-                "sink": [
-                    "Task_Low_Level_Driving.SteeringAngle"
-                ]
-            },
-            {
-                "source": "Task_Coordinator.TargetVelocity",
-                "sink": [
-                    "Task_Low_Level_Driving.TargetVelocity"
-                ]
-            },
-            {
-                "source": "Task_Coordinator.Shutdown",
-                "sink": [
-                    "Task_Low_Level_Driving.Shutdown"
-                ]
-            },
-            {
-                "source": "Task_Coordinator.DA_States__acc",
-                "sink": [
-                    "Task_Driver_Assistance.DA_States__acc"
-                ]
-            },
-            {
-                "source": "Task_Coordinator.DA_States__laneKeep",
-                "sink": [
-                    "Task_Driver_Assistance.DA_States__laneKeep"
-                ]
-            },
-            {
-                "source": "Task_Coordinator.DA_States__speedMinus",
-                "sink": [
-                    "Task_Driver_Assistance.DA_States__speedMinus"
-                ]
-            },
-            {
-                "source": "Task_Coordinator.DA_States__speedPlus",
-                "sink": [
-                    "Task_Driver_Assistance.DA_States__speedPlus"
-                ]
-            },
-            {
-                "source": "Task_Coordinator.DA_States__timeMinus",
-                "sink": [
-                    "Task_Driver_Assistance.DA_States__timeMinus"
-                ]
-            },
-            {
-                "source": "Task_Coordinator.DA_States__timePlus",
-                "sink": [
-                    "Task_Driver_Assistance.DA_States__timePlus"
-                ]
-            },
-            {
-                "source": "Task_Coordinator.DriveMode__DriveMode",
-                "sink": [
-                    "Task_Manual_Driving.DriveMode__DriveMode"
-                ]
-            },
-            {
-                "source": "Task_Coordinator.DriveMode__EngineMode",
-                "sink": [
-                    "Task_Manual_Driving.DriveMode__EngineMode"
-                ]
-            },
-            {
-                "source": "Task_Low_Level_Driving.VelocityValue",
-                "sink": [
-                    "Task_Velocity_Return.VelocityValue"
-                ]
-            },
-            {
-                "source": "Task_Sensor_Data_Fusion.AccelerationOut",
-                "sink": [
-                    "Task_Low_Level_Driving.Acceleration"
-                ]
-            },
-            {
-                "source": "Task_Sensor_Data_Fusion.Velocity",
-                "sink": [
-                    "Task_Manual_Driving.Velocity",
-                    "Task_Coordinator.Velocity",
-                    "Task_Low_Level_Driving.Velocity",
-                    "Task_Environment_Model.Velocity"
-                ]
-            },
-            {
-                "source": "Task_Sensor_Data_Fusion.DistanceFront",
-                "sink": [
-                    "Task_Environment_Model.DistanceFrontIn"
-                ]
-            },
-            {
-                "source": "Task_Sensor_Data_Fusion.GasPedal",
-                "sink": [
-                    "Task_Manual_Driving.GasPedal"
-                ]
-            },
-            {
-                "source": "Task_Sensor_Data_Fusion.BrakePedal",
-                "sink": [
-                    "Task_Manual_Driving.BrakePedal"
-                ]
-            },
-            {
-                "source": "Task_Sensor_Data_Fusion.SteeringWheel",
-                "sink": [
-                    "Task_Manual_Driving.SteeringWheel"
-                ]
-            },
-            {
-                "source": "Task_Sensor_Data_Fusion.GearShift",
-                "sink": [
-                    "Task_Manual_Driving.GearShift"
-                ]
-            },
-            {
-                "source": "Task_Sensor_Data_Fusion.DACommand__acc",
-                "sink": [
-                    "Task_Coordinator.DACommand__acc"
-                ]
-            },
-            {
-                "source": "Task_Sensor_Data_Fusion.DACommand__laneKeep",
-                "sink": [
-                    "Task_Coordinator.DACommand__laneKeep"
-                ]
-            },
-            {
-                "source": "Task_Sensor_Data_Fusion.DACommand__speedPlus",
-                "sink": [
-                    "Task_Coordinator.DACommand__speedPlus"
-                ]
-            },
-            {
-                "source": "Task_Sensor_Data_Fusion.DACommand__speedMinus",
-                "sink": [
-                    "Task_Coordinator.DACommand__speedMinus"
-                ]
-            },
-            {
-                "source": "Task_Sensor_Data_Fusion.DACommand__timeMinus",
-                "sink": [
-                    "Task_Coordinator.DACommand__timeMinus"
-                ]
-            },
-            {
-                "source": "Task_Sensor_Data_Fusion.DACommand__timePlus",
-                "sink": [
-                    "Task_Coordinator.DACommand__timePlus"
-                ]
-            },
-            {
-                "source": "Task_Sensor_Data_Fusion.DriveModeCommands__Button3",
-                "sink": [
-                    "Task_Coordinator.DriveModeCommands__Button3"
-                ]
-            },
-            {
-                "source": "Task_Sensor_Data_Fusion.DriveModeCommands__Button4",
-                "sink": [
-                    "Task_Coordinator.DriveModeCommands__Button4"
-                ]
-            },
-            {
-                "source": "Task_Sensor_Data_Fusion.DriveModeCommands__Button1",
-                "sink": [
-                    "Task_Coordinator.DriveModeCommands__Button1"
-                ]
-            },
-            {
-                "source": "Task_Sensor_Data_Fusion.DriveModeCommands__Button2",
-                "sink": [
-                    "Task_Coordinator.DriveModeCommands__Button2"
-                ]
-            },
-            {
-                "source": "Task_Sensor_Data_Fusion.LDCameraData__orientation",
-                "sink": [
-                    "Task_Environment_Model.LDCameraDataIn__orientation"
-                ]
-            },
-            {
-                "source": "Task_Sensor_Data_Fusion.LDCameraData__movement",
-                "sink": [
-                    "Task_Environment_Model.LDCameraDataIn__movement"
-                ]
-            },
-            {
-                "source": "Task_Sensor_Data_Fusion.LDCameraData__distance_left",
-                "sink": [
-                    "Task_Environment_Model.LDCameraDataIn__distance_left"
-                ]
-            },
-            {
-                "source": "Task_Sensor_Data_Fusion.LDCameraData__distance_right",
-                "sink": [
-                    "Task_Environment_Model.LDCameraDataIn__distance_right"
-                ]
-            },
-            {
-                "source": "Task_Sensor_Data_Fusion.LDCameraData__present_left",
-                "sink": [
-                    "Task_Environment_Model.LDCameraDataIn__present_left"
-                ]
-            },
-            {
-                "source": "Task_Sensor_Data_Fusion.LDCameraData__present_right",
-                "sink": [
-                    "Task_Environment_Model.LDCameraDataIn__present_right"
-                ]
-            },
-            {
-                "source": "Task_Sensor_Data_Fusion.LDCameraData__rover_distance",
-                "sink": [
-                    "Task_Environment_Model.LDCameraDataIn__rover_distance"
-                ]
-            },
-            {
-                "source": "Task_Sensor_Data_Fusion.LDCameraData__rover_detected",
-                "sink": [
-                    "Task_Environment_Model.LDCameraDataIn__rover_detected"
-                ]
-            },
-            {
-                "source": "Task_Sensor_Data_Fusion.LDCameraData__rover_id",
-                "sink": [
-                    "Task_Environment_Model.LDCameraDataIn__rover_id"
-                ]
-            },
-            {
-                "source": "Task_Sensor_Data_Fusion.LDCameraData__server_ok",
-                "sink": [
-                    "Task_Environment_Model.LDCameraDataIn__server_ok"
-                ]
-            },
-            {
-                "source": "Task_Sensor_Data_Fusion.LDCameraData__curve_detected",
-                "sink": [
-                    "Task_Environment_Model.LDCameraDataIn__curve_detected"
-                ]
-            },
-            {
-                "source": "Task_Sensor_Data_Fusion.LDCameraData__curve_radius",
-                "sink": [
-                    "Task_Environment_Model.LDCameraDataIn__curve_radius"
-                ]
-            },
-            {
-                "source": "Task_Sensor_Data_Fusion.ForceEBOff",
-                "sink": [
-                    "Task_Coordinator.ForceEBOff"
-                ]
-            },
-            {
-                "source": "Task_Environment_Model.VelocityFrontObstacleOut",
-                "sink": [
-                    "Task_Driver_Assistance.VelocityFrontObstacle"
-                ]
-            },
-            {
-                "source": "Task_Environment_Model.DistanceFrontOut",
-                "sink": [
-                    "Task_Driver_Assistance.DistanceFront"
-                ]
-            },
-            {
-                "source": "Task_Environment_Model.VelocityOut",
-                "sink": [
-                    "Task_Driver_Assistance.Velocity"
-                ]
-            },
-            {
-                "source": "Task_Environment_Model.LDCameraData__orientation",
-                "sink": [
-                    "Task_Driver_Assistance.LDCameraData__orientation"
-                ]
-            },
-            {
-                "source": "Task_Environment_Model.LDCameraData__movement",
-                "sink": [
-                    "Task_Driver_Assistance.LDCameraData__movement"
-                ]
-            },
-            {
-                "source": "Task_Environment_Model.LDCameraData__distance_left",
-                "sink": [
-                    "Task_Driver_Assistance.LDCameraData__distance_left"
-                ]
-            },
-            {
-                "source": "Task_Environment_Model.LDCameraData__distance_right",
-                "sink": [
-                    "Task_Driver_Assistance.LDCameraData__distance_right"
-                ]
-            },
-            {
-                "source": "Task_Environment_Model.LDCameraData__present_left",
-                "sink": [
-                    "Task_Driver_Assistance.LDCameraData__present_left"
-                ]
-            },
-            {
-                "source": "Task_Environment_Model.LDCameraData__present_right",
-                "sink": [
-                    "Task_Driver_Assistance.LDCameraData__present_right"
-                ]
-            },
-            {
-                "source": "Task_Environment_Model.LDCameraData__rover_distance",
-                "sink": [
-                    "Task_Driver_Assistance.LDCameraData__rover_distance"
-                ]
-            },
-            {
-                "source": "Task_Environment_Model.LDCameraData__rover_detected",
-                "sink": [
-                    "Task_Driver_Assistance.LDCameraData__rover_detected"
-                ]
-            },
-            {
-                "source": "Task_Environment_Model.LDCameraData__rover_id",
-                "sink": [
-                    "Task_Driver_Assistance.LDCameraData__rover_id"
-                ]
-            },
-            {
-                "source": "Task_Environment_Model.LDCameraData__server_ok",
-                "sink": [
-                    "Task_Driver_Assistance.LDCameraData__server_ok"
-                ]
-            },
-            {
-                "source": "Task_Environment_Model.LDCameraData__curve_detected",
-                "sink": [
-                    "Task_Driver_Assistance.LDCameraData__curve_detected"
-                ]
-            },
-            {
-                "source": "Task_Environment_Model.LDCameraData__curve_radius",
-                "sink": [
-                    "Task_Driver_Assistance.LDCameraData__curve_radius"
-                ]
-            },
-            {
-                "source": "Task_Velocity_Return.VelocityReturn",
-                "sink": [
-                    "Task_Sensor_Data_Fusion.VelocityReturn"
-                ]
-            },
-            {
-                "source": "Task_Zero.Output",
-                "sink": [
-                    "Task_Sensor_Data_Fusion.LD_server_lastupdate"
-                ]
-            },
-            {
-                "source": "Task_Driver_Assistance.MaxAccelerationDA",
-                "sink": [
-                    "Task_Coordinator.MaxAccelerationDA"
-                ]
-            },
-            {
-                "source": "Task_Driver_Assistance.SteeringAngleDA",
-                "sink": [
-                    "Task_Coordinator.SteeringAngleDA"
-                ]
-            },
-            {
-                "source": "Task_Driver_Assistance.TargetVelocityDA",
-                "sink": [
-                    "Task_Coordinator.TargetVelocityDA"
-                ]
-            }
-        ]
-    },
-    "fmus": [
-        {
-            "file": "Task_Manual_Driving.fmu",
-            "name": "Task_Manual_Driving"
-        },
-        {
-            "file": "Task_Coordinator.fmu",
-            "name": "Task_Coordinator"
-        },
-        {
-            "file": "Task_Low_Level_Driving.fmu",
-            "name": "Task_Low_Level_Driving"
-        },
-        {
-            "file": "Task_Sensor_Data_Fusion.fmu",
-            "name": "Task_Sensor_Data_Fusion"
-        },
-        {
-            "file": "Task_Environment_Model.fmu",
-            "name": "Task_Environment_Model"
-        },
-        {
-            "file": "Task_Velocity_Return.fmu",
-            "name": "Task_Velocity_Return"
-        },
-        {
-            "file": "Task_Zero.fmu",
-            "name": "Task_Zero"
-        },
-        {
-            "file": "Task_Driver_Assistance.fmu",
-            "name": "Task_Driver_Assistance"
-        }
-    ],
-    "settings": {
-        "fmuStepSize": 0.01,
-        "updateSize": 0.1
-    }
+"connections": {
+"external": {
+"incoming": [
+{
+"name": "LeftStick_X",
+"sink": "Task_Sensor_Data_Fusion.LeftStick_X"},
+{
+"name": "ButtonL2",
+"sink": "Task_Sensor_Data_Fusion.ButtonL2"},
+{
+"name": "ButtonL1",
+"sink": "Task_Sensor_Data_Fusion.ButtonL1"},
+{
+"name": "ButtonR2",
+"sink": "Task_Sensor_Data_Fusion.ButtonR2"},
+{
+"name": "ButtonR1",
+"sink": "Task_Sensor_Data_Fusion.ButtonR1"},
+{
+"name": "ButtonX",
+"sink": "Task_Sensor_Data_Fusion.ButtonX"},
+{
+"name": "ButtonA",
+"sink": "Task_Sensor_Data_Fusion.ButtonA"},
+{
+"name": "ButtonB",
+"sink": "Task_Sensor_Data_Fusion.ButtonB"},
+{
+"name": "ButtonY",
+"sink": "Task_Sensor_Data_Fusion.ButtonY"},
+{
+"name": "Velocity_In",
+"sink": "Task_Sensor_Data_Fusion.Velocity_In"},
+{
+"name": "DistanceToFrontUS_left",
+"sink": "Task_Sensor_Data_Fusion.DistanceToFrontUS_left"},
+{
+"name": "DistanceToFrontLaser",
+"sink": "Task_Sensor_Data_Fusion.DistanceToFrontLaser"},
+{
+"name": "RightStick_X",
+"sink": "Task_Sensor_Data_Fusion.RightStick_X"},
+{
+"name": "RightStick_Y",
+"sink": "Task_Sensor_Data_Fusion.RightStick_Y"},
+{
+"name": "LeftStick_Y",
+"sink": "Task_Sensor_Data_Fusion.LeftStick_Y"},
+{
+"name": "ButtonSelect",
+"sink": "Task_Sensor_Data_Fusion.ButtonSelect"},
+{
+"name": "ButtonHome",
+"sink": "Task_Sensor_Data_Fusion.ButtonHome"},
+{
+"name": "LD_Distance_Left",
+"sink": "Task_Sensor_Data_Fusion.LD_Distance_Left"},
+{
+"name": "LD_Distance_Right",
+"sink": "Task_Sensor_Data_Fusion.LD_Distance_Right"},
+{
+"name": "LD_present_left",
+"sink": "Task_Sensor_Data_Fusion.LD_present_left"},
+{
+"name": "LD_present_right",
+"sink": "Task_Sensor_Data_Fusion.LD_present_right"},
+{
+"name": "LaneDetectionOrientation_In",
+"sink": "Task_Sensor_Data_Fusion.LaneDetectionOrientation_In"},
+{
+"name": "DistanceToFrontUS_right",
+"sink": "Task_Sensor_Data_Fusion.DistanceToFrontUS_right"},
+{
+"name": "DPadLeft",
+"sink": "Task_Sensor_Data_Fusion.DPadLeft"},
+{
+"name": "DPadRight",
+"sink": "Task_Sensor_Data_Fusion.DPadRight"},
+{
+"name": "DPadUp",
+"sink": "Task_Sensor_Data_Fusion.DPadUp"},
+{
+"name": "DPadDown",
+"sink": "Task_Sensor_Data_Fusion.DPadDown"},
+{
+"name": "LaneDetectionRoverDetected_In",
+"sink": "Task_Sensor_Data_Fusion.LaneDetectionRoverDetected_In"},
+{
+"name": "LaneDetectionRoverDistance_In",
+"sink": "Task_Sensor_Data_Fusion.LaneDetectionRoverDistance_In"},
+{
+"name": "LaneDetectionRoverId_In",
+"sink": "Task_Sensor_Data_Fusion.LaneDetectionRoverId_In"},
+{
+"name": "LaneDetectionCurveDetected_In",
+"sink": "Task_Sensor_Data_Fusion.LaneDetectionCurveDetected_In"},
+{
+"name": "LaneDetectionCurveRadius_In",
+"sink": "Task_Sensor_Data_Fusion.LaneDetectionCurveRadius_In"},
+{
+"name": "LD_server_connected",
+"sink": "Task_Sensor_Data_Fusion.LD_server_connected"},
+{
+"name": "ButtonStart",
+"sink": "Task_Sensor_Data_Fusion.ButtonStart"}
+],
+"outgoing": [
+{
+"name": "MotorValue",
+"source": "Task_Low_Level_Driving.MotorValue"},
+{
+"name": "SteeringValue",
+"source": "Task_Low_Level_Driving.SteeringValue"}
+]
+},
+"internal": [
+{
+"source": "Task_Low_Level_Driving.VelocityValue_Out","sink": [
+"Task_Feedback.VelocityValue_In"
+]
+},
+{
+"source": "Task_Sensor_Data_Fusion.Velocity_Out","sink": [
+"Task_Low_Level_Driving.Velocity_In",
+"Task_Environment_Model.Velocity_In",
+"Task_Manual_Driving.Velocity_In",
+"Task_Coordinator.Velocity_In"
+]
+},
+{
+"source": "Task_Sensor_Data_Fusion.DistanceFront_Out","sink": [
+"Task_Environment_Model.DistanceFront_In"
+]
+},
+{
+"source": "Task_Sensor_Data_Fusion.GasPedal_Out","sink": [
+"Task_Manual_Driving.GasPedal_In"
+]
+},
+{
+"source": "Task_Sensor_Data_Fusion.BrakePedal_Out","sink": [
+"Task_Manual_Driving.BrakePedal_In"
+]
+},
+{
+"source": "Task_Sensor_Data_Fusion.SteeringWheel_Out","sink": [
+"Task_Manual_Driving.SteeringWheel_In"
+]
+},
+{
+"source": "Task_Sensor_Data_Fusion.GearShift_Out","sink": [
+"Task_Manual_Driving.GearShift_In"
+]
+},
+{
+"source": "Task_Sensor_Data_Fusion.DriverAssistanceCommands_Out__acc","sink": [
+"Task_Coordinator.DriverAssistanceCommands_In__acc"
+]
+},
+{
+"source": "Task_Sensor_Data_Fusion.DriverAssistanceCommands_Out__laneKeep","sink": [
+"Task_Coordinator.DriverAssistanceCommands_In__laneKeep"
+]
+},
+{
+"source": "Task_Sensor_Data_Fusion.DriverAssistanceCommands_Out__speedPlus","sink": [
+"Task_Coordinator.DriverAssistanceCommands_In__speedPlus"
+]
+},
+{
+"source": "Task_Sensor_Data_Fusion.DriverAssistanceCommands_Out__speedMinus","sink": [
+"Task_Coordinator.DriverAssistanceCommands_In__speedMinus"
+]
+},
+{
+"source": "Task_Sensor_Data_Fusion.DriverAssistanceCommands_Out__timeMinus","sink": [
+"Task_Coordinator.DriverAssistanceCommands_In__timeMinus"
+]
+},
+{
+"source": "Task_Sensor_Data_Fusion.DriverAssistanceCommands_Out__timePlus","sink": [
+"Task_Coordinator.DriverAssistanceCommands_In__timePlus"
+]
+},
+{
+"source": "Task_Sensor_Data_Fusion.DriveModeCommands_Out__Button3","sink": [
+"Task_Coordinator.DriveModeCommands_In__Button3"
+]
+},
+{
+"source": "Task_Sensor_Data_Fusion.DriveModeCommands_Out__Button4","sink": [
+"Task_Coordinator.DriveModeCommands_In__Button4"
+]
+},
+{
+"source": "Task_Sensor_Data_Fusion.DriveModeCommands_Out__Button1","sink": [
+"Task_Coordinator.DriveModeCommands_In__Button1"
+]
+},
+{
+"source": "Task_Sensor_Data_Fusion.DriveModeCommands_Out__Button2","sink": [
+"Task_Coordinator.DriveModeCommands_In__Button2"
+]
+},
+{
+"source": "Task_Sensor_Data_Fusion.LaneDetectionCameraData_Out__orientation","sink": [
+"Task_Environment_Model.LaneDetectionCameraData_In__orientation"
+]
+},
+{
+"source": "Task_Sensor_Data_Fusion.LaneDetectionCameraData_Out__movement","sink": [
+"Task_Environment_Model.LaneDetectionCameraData_In__movement"
+]
+},
+{
+"source": "Task_Sensor_Data_Fusion.LaneDetectionCameraData_Out__distance_left","sink": [
+"Task_Environment_Model.LaneDetectionCameraData_In__distance_left"
+]
+},
+{
+"source": "Task_Sensor_Data_Fusion.LaneDetectionCameraData_Out__distance_right","sink": [
+"Task_Environment_Model.LaneDetectionCameraData_In__distance_right"
+]
+},
+{
+"source": "Task_Sensor_Data_Fusion.LaneDetectionCameraData_Out__present_left","sink": [
+"Task_Environment_Model.LaneDetectionCameraData_In__present_left"
+]
+},
+{
+"source": "Task_Sensor_Data_Fusion.LaneDetectionCameraData_Out__present_right","sink": [
+"Task_Environment_Model.LaneDetectionCameraData_In__present_right"
+]
+},
+{
+"source": "Task_Sensor_Data_Fusion.LaneDetectionCameraData_Out__rover_distance","sink": [
+"Task_Environment_Model.LaneDetectionCameraData_In__rover_distance"
+]
+},
+{
+"source": "Task_Sensor_Data_Fusion.LaneDetectionCameraData_Out__rover_detected","sink": [
+"Task_Environment_Model.LaneDetectionCameraData_In__rover_detected"
+]
+},
+{
+"source": "Task_Sensor_Data_Fusion.LaneDetectionCameraData_Out__rover_id","sink": [
+"Task_Environment_Model.LaneDetectionCameraData_In__rover_id"
+]
+},
+{
+"source": "Task_Sensor_Data_Fusion.LaneDetectionCameraData_Out__server_ok","sink": [
+"Task_Environment_Model.LaneDetectionCameraData_In__server_ok"
+]
+},
+{
+"source": "Task_Sensor_Data_Fusion.LaneDetectionCameraData_Out__curve_detected","sink": [
+"Task_Environment_Model.LaneDetectionCameraData_In__curve_detected"
+]
+},
+{
+"source": "Task_Sensor_Data_Fusion.LaneDetectionCameraData_Out__curve_radius","sink": [
+"Task_Environment_Model.LaneDetectionCameraData_In__curve_radius"
+]
+},
+{
+"source": "Task_Feedback.VelocityReturn_Out","sink": [
+"Task_Sensor_Data_Fusion.VelocityReturn_In"
+]
+},
+{
+"source": "Task_Environment_Model.VelocityFrontObstacle_Out","sink": [
+"Task_Adaptive_Cruise_Control.VelocityFrontObstacle_In"
+]
+},
+{
+"source": "Task_Environment_Model.DistanceFront_Out","sink": [
+"Task_Adaptive_Cruise_Control.DistanceFront_In"
+]
+},
+{
+"source": "Task_Environment_Model.Velocity_Out","sink": [
+"Task_Adaptive_Cruise_Control.Velocity_In",
+"Task_Lane_Keeping.Velocity_In"
+]
+},
+{
+"source": "Task_Environment_Model.LaneDetectionCameraData_Out__orientation","sink": [
+"Task_Lane_Keeping.LaneDetectionCameraData_In__orientation"
+]
+},
+{
+"source": "Task_Environment_Model.LaneDetectionCameraData_Out__movement","sink": [
+"Task_Lane_Keeping.LaneDetectionCameraData_In__movement"
+]
+},
+{
+"source": "Task_Environment_Model.LaneDetectionCameraData_Out__distance_left","sink": [
+"Task_Lane_Keeping.LaneDetectionCameraData_In__distance_left"
+]
+},
+{
+"source": "Task_Environment_Model.LaneDetectionCameraData_Out__distance_right","sink": [
+"Task_Lane_Keeping.LaneDetectionCameraData_In__distance_right"
+]
+},
+{
+"source": "Task_Environment_Model.LaneDetectionCameraData_Out__present_left","sink": [
+"Task_Lane_Keeping.LaneDetectionCameraData_In__present_left"
+]
+},
+{
+"source": "Task_Environment_Model.LaneDetectionCameraData_Out__present_right","sink": [
+"Task_Lane_Keeping.LaneDetectionCameraData_In__present_right"
+]
+},
+{
+"source": "Task_Environment_Model.LaneDetectionCameraData_Out__rover_distance","sink": [
+"Task_Lane_Keeping.LaneDetectionCameraData_In__rover_distance"
+]
+},
+{
+"source": "Task_Environment_Model.LaneDetectionCameraData_Out__rover_detected","sink": [
+"Task_Lane_Keeping.LaneDetectionCameraData_In__rover_detected"
+]
+},
+{
+"source": "Task_Environment_Model.LaneDetectionCameraData_Out__rover_id","sink": [
+"Task_Lane_Keeping.LaneDetectionCameraData_In__rover_id"
+]
+},
+{
+"source": "Task_Environment_Model.LaneDetectionCameraData_Out__server_ok","sink": [
+"Task_Lane_Keeping.LaneDetectionCameraData_In__server_ok"
+]
+},
+{
+"source": "Task_Environment_Model.LaneDetectionCameraData_Out__curve_detected","sink": [
+"Task_Lane_Keeping.LaneDetectionCameraData_In__curve_detected"
+]
+},
+{
+"source": "Task_Environment_Model.LaneDetectionCameraData_Out__curve_radius","sink": [
+"Task_Lane_Keeping.LaneDetectionCameraData_In__curve_radius"
+]
+},
+{
+"source": "Task_Manual_Driving.MaxAccelerationManualDriving_Out","sink": [
+"Task_Coordinator.MaxAccelerationManualDriving_In"
+]
+},
+{
+"source": "Task_Manual_Driving.TargetVelocityManualDriving_Out","sink": [
+"Task_Coordinator.TargetVelocityManualDriving_In"
+]
+},
+{
+"source": "Task_Manual_Driving.SteeringAngleManualDriving_Out","sink": [
+"Task_Coordinator.SteeringAngleManualDriving_In"
+]
+},
+{
+"source": "Task_Coordinator.MaxAcceleration_Out","sink": [
+"Task_Low_Level_Driving.MaxAcceleration_In"
+]
+},
+{
+"source": "Task_Coordinator.TargetSteeringAngle_Out","sink": [
+"Task_Low_Level_Driving.TargetSteeringAngle_In"
+]
+},
+{
+"source": "Task_Coordinator.TargetVelocity_Out","sink": [
+"Task_Low_Level_Driving.TargetVelocity_In"
+]
+},
+{
+"source": "Task_Coordinator.DriverAssistanceStates_Out__acc","sink": [
+"Task_Adaptive_Cruise_Control.DriverAssistanceStates_In__acc",
+"Task_Lane_Keeping.DriverAssistanceStates_In__acc"
+]
+},
+{
+"source": "Task_Coordinator.DriverAssistanceStates_Out__laneKeep","sink": [
+"Task_Adaptive_Cruise_Control.DriverAssistanceStates_In__laneKeep",
+"Task_Lane_Keeping.DriverAssistanceStates_In__laneKeep"
+]
+},
+{
+"source": "Task_Coordinator.DriverAssistanceStates_Out__speedMinus","sink": [
+"Task_Adaptive_Cruise_Control.DriverAssistanceStates_In__speedMinus",
+"Task_Lane_Keeping.DriverAssistanceStates_In__speedMinus"
+]
+},
+{
+"source": "Task_Coordinator.DriverAssistanceStates_Out__speedPlus","sink": [
+"Task_Adaptive_Cruise_Control.DriverAssistanceStates_In__speedPlus",
+"Task_Lane_Keeping.DriverAssistanceStates_In__speedPlus"
+]
+},
+{
+"source": "Task_Coordinator.DriverAssistanceStates_Out__timeMinus","sink": [
+"Task_Adaptive_Cruise_Control.DriverAssistanceStates_In__timeMinus",
+"Task_Lane_Keeping.DriverAssistanceStates_In__timeMinus"
+]
+},
+{
+"source": "Task_Coordinator.DriverAssistanceStates_Out__timePlus","sink": [
+"Task_Adaptive_Cruise_Control.DriverAssistanceStates_In__timePlus",
+"Task_Lane_Keeping.DriverAssistanceStates_In__timePlus"
+]
+},
+{
+"source": "Task_Coordinator.DriveMode_Out","sink": [
+"Task_Manual_Driving.DriveMode_In"
+]
+},
+{
+"source": "Task_Adaptive_Cruise_Control.MaxAcceleration_Out","sink": [
+"Task_Coordinator.MaxAccelerationDriverAssistance_In"
+]
+},
+{
+"source": "Task_Adaptive_Cruise_Control.TargetVelocity_Out","sink": [
+"Task_Coordinator.TargetVelocityDriverAssistance_In"
+]
+},
+{
+"source": "Task_Lane_Keeping.SteeringAngle_Out","sink": [
+"Task_Coordinator.SteeringAngleDriverAssistance_In"
+]
+}
+]
+},
+"fmus": [
+{
+"file": "Task_Low_Level_Driving.fmu",
+ "name": "Task_Low_Level_Driving"
+},
+{
+"file": "Task_Sensor_Data_Fusion.fmu",
+ "name": "Task_Sensor_Data_Fusion"
+},
+{
+"file": "Task_Feedback.fmu",
+ "name": "Task_Feedback"
+},
+{
+"file": "Task_Environment_Model.fmu",
+ "name": "Task_Environment_Model"
+},
+{
+"file": "Task_Manual_Driving.fmu",
+ "name": "Task_Manual_Driving"
+},
+{
+"file": "Task_Coordinator.fmu",
+ "name": "Task_Coordinator"
+},
+{
+"file": "Task_Adaptive_Cruise_Control.fmu",
+ "name": "Task_Adaptive_Cruise_Control"
+},
+{
+"file": "Task_Lane_Keeping.fmu",
+ "name": "Task_Lane_Keeping"
+}
+],
+"settings": {
+"fmuStepSize": 0.01,
+ "updateSize": 0.1
+}
 }
