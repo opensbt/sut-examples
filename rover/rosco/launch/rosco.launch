@@ -6,14 +6,14 @@
 
     <param name="synchronous" value="true" />
 
-    <node name="Task_Adaptive_Cruise_Control" pkg="rosco" type="slave" output="screen" />
-    <node name="Task_Coordinator" pkg="rosco" type="slave" output="screen" />
-    <node name="Task_Environment_Model" pkg="rosco" type="slave" output="screen" />
-    <node name="Task_Feedback" pkg="rosco" type="slave" output="screen" />
-    <node name="Task_Lane_Keeping" pkg="rosco" type="slave" output="screen" />
-    <node name="Task_Low_Level_Driving" pkg="rosco" type="slave" output="screen" />
-    <node name="Task_Manual_Driving" pkg="rosco" type="slave" output="screen" />
-    <node name="Task_Sensor_Data_Fusion" pkg="rosco" type="slave" output="screen" />
+    <node name="Task_Adaptive_Cruise_Control" pkg="rosco" type="slave" />
+    <node name="Task_Coordinator" pkg="rosco" type="slave" />
+    <node name="Task_Environment_Model" pkg="rosco" type="slave" />
+    <node name="Task_Feedback" pkg="rosco" type="slave" />
+    <node name="Task_Lane_Keeping" pkg="rosco" type="slave" />
+    <node name="Task_Low_Level_Driving" pkg="rosco" type="slave" />
+    <node name="Task_Manual_Driving" pkg="rosco" type="slave" />
+    <node name="Task_Sensor_Data_Fusion" pkg="rosco" type="slave" />
 
     <node name="master" pkg="rosco" type="master" output="screen"/>
 
